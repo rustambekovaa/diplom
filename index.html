@@ -13,8 +13,16 @@
             background-position: center;
         }
 
+        body {
+            background-image: url(./assets/images/ugolek.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
         .bg-section {
-            background-image: url('./assets/images/2.webp');
+            background-image: url('./assets/images/bg1.jpg');
             background-size: cover;
             background-position: center;
         }
@@ -48,73 +56,74 @@
             font-weight: bold;
             margin-bottom: 10px;
             text-align: center;
-            
+
             width: 700px;
         }
-        
+
         .subtitle {
             font-size: 20px;
             margin-bottom: 10px;
         }
-        
+
         .department {
             font-size: 18px;
             margin-bottom: 10px;
         }
-        
+
         .sub-department {
             font-size: 16px;
             margin-bottom: 20px;
         }
-        
+
         .qualification-title {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 10px;
         }
-        
+
         .qualification-theme {
             font-size: 24px;
             margin-bottom: 20px;
         }
-        
+
         .student-info {
             margin-bottom: 20px;
         }
-        
+
         .student,
         .supervisor {
             font-size: 16px;
             margin-bottom: 10px;
         }
-        
+
         .student-name,
         .supervisor-name {
             font-weight: bold;
         }
-        
+
         .approval {
             margin-bottom: 20px;
         }
-        
+
         .approval-text {
             font-size: 16px;
             margin-bottom: 10px;
         }
-        
+
         .signature {
             font-size: 14px;
             margin-bottom: 10px;
         }
-        
+
         .year {
             font-size: 16px;
             font-style: italic;
         }
+
         .relative.group:hover .hidden {
             display: block;
         }
-        
+
         .relative.group .hidden {
             position: absolute;
             top: 100%;
@@ -125,27 +134,27 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
             z-index: 10;
         }
-        
+
         .relative.group .hidden section {
             border-bottom: 1px solid #ddd;
             padding: 10px;
         }
-        
+
         .relative.group .hidden ul {
             list-style: none;
             padding: 0;
             margin: 0;
         }
-        
+
         .relative.group .hidden ul li {
             padding: 10px;
         }
-        
+
         .relative.group .hidden ul li a {
             color: black;
             text-decoration: none;
         }
-        
+
         .relative.group .hidden ul li a:hover {
             background-color: #f0f0f0;
         }
@@ -154,24 +163,26 @@
 
 
 
-<body class="bg-white-100 text-gray-900">
-    <header class="header-bg text-white py-8 bg-gray-700">
+<body class="bg text-gray-900">
+    <header class="header-bg text-white py-8 bg-cyan-500">
         <div class="container mx-auto max-w-screen-lg">
             <nav class="flex justify-between items-center">
-                <h1 class="text-2xl font-bold">Сейсмотомография</h1>
+                <a href="#author" class="text-xl font-semibold hover:text-gray-300" id="">Автор</a>
                 <ul class="flex space-x-4">
-                    <li><a href="#footer" class="text-lg font-semibold hover:text-gray-300">О нас</a></li>
-                    <li><a href="#" class="text-lg font-semibold hover:text-gray-300" id="author-link">Автор</a></li>
+                    <li><a href="#footer" class="text-xl font-semibold hover:text-gray-300">О нас</a></li> 
                     <li class="relative group">
-                        <a href="#" class="text-lg font-semibold hover:text-gray-300">Контакты</a>
-                        <div class="hidden group-hover:block absolute bg-white text-black py-2 mt-1 border border-gray-200 shadow-lg w-52">
+                        <a href="#" class="text-xl font-semibold hover:text-gray-300">Контакты</a>
+                        <div
+                            class="hidden group-hover:block absolute bg-white text-black py-2 mt-1 border border-gray-200 shadow-lg w-52">
                             <section class="py-2 border-b">
                                 <ul>
                                     <li>
-                                        <a class="flex items-center px-4 py-2 text-sm hover:bg-gray-100" href="#">ФИО: Абдраимов Орозбек Даниярович</a>
+                                        <a class="flex items-center px-4 py-2 text-sm hover:bg-gray-100" href="#">ФИО:
+                                            Алижан уулу Улукбек</a>
                                     </li>
                                     <li>
-                                        <a class="flex items-center px-4 py-2 text-sm hover:bg-gray-100" href="#">Номер: +996 557 707 885</a>
+                                        <a class="flex items-center px-4 py-2 text-sm hover:bg-gray-100" href="#">Номер:
+                                            +996 527 059 515</a>
                                     </li>
                                 </ul>
                             </section>
@@ -181,146 +192,82 @@
             </nav>
         </div>
     </header>
+
     
-    <section id="author-info" style="display: none;">
-        <div class="container mx-auto max-w-screen-lg mr-[100px] mt-7">
-            <div class="container ">
-                <h1 class="title">КЫРГЫЗ РЕСПУБЛИКАСЫНЫН БИЛИМ БЕРҮҮ ЖАНА ИЛИМ МИНИСТРЛИГИ</h1>
-                <h2 class="subtitle w-[750px] text-center mt-5 ">Ош Мамлекеттик университети
-                    Математика, физика, техника жана информациялык технологиялар институту
-                    </h2>
-                <h3 class="department w-[750px] text-center mt-5">Колдонмо информатика жана информациялык коопсуздук кафедрасы</h3>
-        
-                <div class="qualification w-[750px]">
-                    <h2 class="qualification-title flex justify-center mt-12 mb-12">КВАЛИФИКАЦИЯЛЫК ЖУМУШ</h2>
-                    <h1 class="qualification-theme w-[750px] text-center">тема:  Сейсмикалык томография маселелерин чечүүнүн тактыгынын алгоритмди тандоодон жана Р толкундарын аныктоонун тактыгынан көз карандылыгын көрсөтүүчү web-сайтты иштеп чыгуу</h1>
-                </div>
-                <div class="flex justify-between w-[700px] mt-24">
-                    <p class="student">Аткарган ПИЭд(б)-1-19 гр.студенти:</p> <p class="student-name">Абдраимов Орозбек Даниярович</p>
 
-                </div>
-                
-                <div class="student-info flex justify-between w-[700px]">
-                    <p class="supervisor">Илимий жетекчи:</p> <span class="supervisor-name">ф.-м.и.д., проф. Сайипбекова А.</span>
-                </div>
-        
-
-                <div class="flex justify-between w-[700px] mt-20">
-                    <p class="student">КИИК каф. башчысы:</p> <p class="student-name"> ф-м.и.к., доц. У.З.Эркебаев</p>
-
-                </div>
-                
-        
-                <p class="year text-center mr-[350px]">Ош-2024 ж.</p>
-            </div>
-            <!-- <button id="close-author-info" class="text-lg font-semibold hover:text-gray-300">Закрыть</button> -->
-        </div>
-        <style>
-            
-        </style>
-    </section>
-    
 
     <main class="container mx-auto py-12 max-w-screen-lg">
         <section class="mb-12 flex flex-col justify-center items-center text-center bg-section relative h-[450px]">
             <div class="overlay absolute inset-0 "></div>
             <div class="relative  w-[800px]">
-                <h2 class="text-2xl font-bold text-white">Сейсмикалык томография маселелерин чечүүнүн тактыгынын алгоритмди тандоодон жана Р толкундарын аныктоонун тактыгынан көз карандылыгын көрсөтүүчү web-сайтты иштеп чыгуу</h2>
+                <h2 class="text-2xl font-bold text-white">Сайтты иштеп чыгуу жана көмүр кендеринен түшкөн кирешелерди
+                    статистикалык талдоо</h2>
             </div>
         </section>
 
 
-        <section id="introduction" class="mb-12 p-8 bg-gray-700 rounded-lg shadow-md">
-            <h3 class="text-3xl font-semibold mb-4 text-white">Киришүү</h3>
-            <p class="text-lg text-white">Бул бөлүмдүн максаты сейсмикалык силкинүүнүн санарип жазууларынын негизинде
-                Кыргызстандын жер кыртышынын ылдамдыктын бир тектүү эместигин аныктоого мүмкүндүк берген колдонмо
-                математикалык маселенин чечилишине баа берүү болуп саналат.</p>
-        </section>
+        <section id="introduction" class="mb-12 p-8 bg-cyan-500 rounded-lg shadow-md">
+            <h3 class="text-3xl font-semibold mb-4 text-white">Кыргызстандын Көмүр Казуу Тарыхы</h3>
+            <p class="text-lg text-white">Кыргызстанда көмүр казуу 19-кылымдын аягында башталган. Алгачкы кендерге Нарын (1890), Көкжангак (1896), Кызылкыя (1898), Сүлүктү жана Шураб (1900) кирет.
+                1917-жылы бул кендерден 166 миң тонна көмүр казып алынган. 
+                1940-жылга чейин көмүр өнөр жайы негизинен ушул кендерге негизделген.
+       </section>
 
         <section id="methodology" class="mb-12 p-8 bg-gray-100 rounded-lg shadow-md">
-            <h3 class="text-3xl font-semibold mb-4 text-gray-800">Методология</h3>
-            <div class="mb-8">
-                <h4 class="text-2xl font-semibold mb-2 text-gray-700">Токтомду баалоо үчүн синтетикалык тест моделдер
-                    ыкмасы колдонулат. Анын максаты тандалган маалыматтарды колдонуу менен белгилүү бир өлчөмдөгү
-                    аномалияларды чечүү мүмкүн деген тыянак чыгаруу болуп саналат...</p>
+            <h3 class="text-3xl font-semibold mb-4 text-gray-800">Кыргызстандын көмүр өнөр жайы
+            </h3>
+            <div class="mb-8">  
+                <h4 class="text-2xl font-semibold mb-2 text-gray-700">Кыргызстанда көмүр негизги отун болуп саналат. Өлкөдө 70тен 
+                    ашык көмүр кени бар, запастары 2,3 миллиард тоннаны түзөт. 
+                    Негизги көмүр өндүрүү аймагы Нарын облусу.
+                    Кыргызстандын көмүрүнүн кемчилиги - механикалык бекемдигинин төмөндүгү,
+                     бул ачык ыкма менен казып алууда көп көмүр майдаланып кетишине себеп болот. Жылытуу мезгилинде жылына 2 миллион тонна көмүр керектелет.
+                    
+                    </p>
             </div>
-            <div class="flex items-center ">
-                <div class="w-[900px]">
-                    <h4 class="text-2xl font-semibold mb-2 text-gray-700 ">Сейсмикалык томография алгоритми</h4>
-                    <p class="text-lg text-gray-700">Сейсмикалык томография төмөнкүдөй ишке ашырылат. Экологиялык модель
-                        ылдамдыктын маанилери көрсөтүлгөн клеткалар же түйүндөр үчүн тор түрүндө берилет...</p>
-                </div>
+            <div class=" items-center ">
                 <div class="flex justify-center mt-6">
-                    <img src="./assets/images/tomography_algorithm.png" alt="Алгоритм сейсмической томографии"
-                        class="rounded-lg shadow-md w-[850px]">
+                    <img src="./assets/images/p4.jpg" alt="Алгоритм сейсмической томографии"
+                        class="rounded-lg shadow-md w-[650px]">
                 </div>
+                <div class="w-[900px]">
+                    <h4 class="text-2xl font-semibold mt-4 text-center text-gray-700 justify-center ">Сүрөт 2.1. Кыргыз Республикасындагы көмүр кендерин жайгаштыруу картасы</h4>
+                </div>
+                
+            </div>
+        </section>
+        <section id="conclusion" class="mb-12 p-8 rounded-lg">
+            <div class="grid grid-cols-2 gap-9">
+                <button onclick="openModal('./assets/images/p5.jpg')">
+                    <div
+                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
+                        <img src="./assets/images/p5.jpg" alt="" class="w-full h-3/4 object-cover">
+                        <div class="p-4">
+                            <p class="text-lg font-semibold mb-2">Сүрөт 2.2.</p>
+                            <p class="text-sm"> Кара-Кече көмүр кени, Кыргызстан</p>
+                        </div>
+                    </div>
+                </button>
+                <button onclick="openModal('./assets/images/p6.jpg')">
+                    <div
+                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
+                        <img src="./assets/images/p6.jpg" alt="" class="w-full h-3/4 object-cover">
+                        <div class="p-4">
+                            <p class="text-lg font-semibold mb-2">Сүрөт 2.3.</p>
+                            <p class="text-sm"> Көмүр ташуу, Кара-Кече кени, Кыргызстан</p>
+                        </div>
+                    </div>
+                </button>
             </div>
         </section>
 
 
-        <section id="introduction" class="mb-12 p-8 bg-gray-700 rounded-lg shadow-md">
-            <p class="text-lg text-white"> Сейсмикалык томографиялык курулуштун алгоритми чөйрөнү блокторго бөлүүнү
-                колдонот, мында ар бир блоктун
-                өзүнүн параметрдик өзгөрмөлүүлүгү (жайлануу 1/V). Ишенимдүү үчүн
-                натыйжалары үчүн чөйрөнү объективдүү параметрлештирүү маанилүү, бул талап кылат
-                ошентип блоктор геологиялык жактан бир тектүү жана талап кылынган нерселерди камсыз кылат
-                резолюция. Жаңы модель 396 блокту камтыйт.</p>
+        <section id="introduction" class="mb-12 p-8 bg-cyan-500 rounded-lg shadow-md">
+            <h1  class="text-xl text-white">Кыргызстанда көмүрдүн орточо баасы 5 миң сомдон бир аз жогору</h1>
         </section>
 
-        <section class=" bg-gray-100 mb-7">
-            <div class="content">
-                <table class="styled-table">
-                    <thead>
-                        <tr>
-                            <th>Слой</th>
-                            <th>Размер блока</th>
-                            <th>Количество блоков</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>слой 1</td>
-                            <td>5 * 5 км</td>
-                            <td>73 блока</td>
-                        </tr>
-                        <tr>
-                            <td>слой 2</td>
-                            <td>5 * 10 км</td>
-                            <td>73 блока</td>
-                        </tr>
-                        <tr>
-                            <td>слой 3</td>
-                            <td>10 * 20 км</td>
-                            <td>73 блока</td>
-                        </tr>
-                        <tr>
-                            <td>слой 4</td>
-                            <td>20 * 35 км</td>
-                            <td>73 блока</td>
-                        </tr>
-                        <tr>
-                            <td>слой 5</td>
-                            <td>35 * 50 км</td>
-                            <td>33 блока</td>
-                        </tr>
-                        <tr>
-                            <td>слой 6</td>
-                            <td>50 * 75 км</td>
-                            <td>33 блока</td>
-                        </tr>
-                        <tr>
-                            <td>слой 7</td>
-                            <td>75 * 150 км</td>
-                            <td>19 блоков</td>
-                        </tr>
-                        <tr>
-                            <td>слой 8</td>
-                            <td>150 * 300 км</td>
-                            <td>19 блоков</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <section class="">
+            <img src="./assets/images/p2.jpg" alt="">
         </section>
 
 
@@ -339,7 +286,7 @@
                 width: 100%;
                 height: 100%;
                 overflow: auto;
-                background-color: rgba(0, 0, 0, 0.7);
+                background-color: rgba(0, 0, 0, 0.678);
             }
 
             .modal-content {
@@ -347,7 +294,7 @@
                 display: block;
                 max-width: 80%;
                 max-height: 80%;
-                margin-top: 80px;
+                margin-top: 150px;
             }
 
             .close {
@@ -367,178 +314,49 @@
                 cursor: pointer;
             }
         </style>
-
-        <section id="conclusion" class="mb-12 p-8 rounded-lg">
-            <div class="grid grid-cols-2 gap-9">
-                <button onclick="openModal('./assets/images/2.8.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.8.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.8</p>
-                            <p class="text-sm">Түштүктөн түндүккө карай тилке (Таримден Күнгөй-АлаТоого) – 78 узундуктан
-                                65 км тереңдикке чейин, узундуктагы толкундун ылдамдыгы Vp.</p>
-                        </div>
-                    </div>
-                </button>
-
-
-                <button onclick="openModal('./assets/images/2.15.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.15.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.15</p>
-                            <p class="text-sm">Сейсмикалык станциялардын жайгашкан жери (үч бурчтуктар)
-                                жана айрым эпицентрлер.</p>
-                        </div>
-                    </div>
-                </button>
-
-
-                <button onclick="openModal('./assets/images/2.7.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.7.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.7</p>
-                            <p class="text-sm">60 км тереңдикте участогу.</p>
-                        </div>
-                    </div>
-                </button>
-
-                <button onclick="openModal('./assets/images/2.6.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-10card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.6.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.6</p>
-                            <p class="text-sm">Жер титирөөлөр жана жарылуулар колдонулган жер.</p>
-                        </div>
-                    </div>
-                </button>
-
-                <button onclick="openModal('./assets/images/2.9.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.9.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.9</p>
-                            <p class="text-sm">Түштүктөн түндүккө карай тилке (Таримден Күнгөй-АлаТоого) - 78 узундуктан
-                                65 км тереңдикке чейин, жылыш толкунунун ылдамдыгы Vs.</p>
-                        </div>
-                    </div>
-                </button>
-
-                <button onclick="openModal('./assets/images/2.5.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.5.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.5</p>
-                            <p class="text-sm">Жергиликтүү жер титирөөлөрдүн траекторияларынан түзүлгөн нур диаграммасы.
-                                Сандар сейсмикалык станциялардын санын көрсөтөт.</p>
-                        </div>
-                    </div>
-                </button>
-
-
-                <button onclick="openModal('./assets/images/2.11.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.11.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.11</p>
-                            <p class="text-sm">Литосферанын 5 - 10 км тереңдик диапазонундагы ылдамдыктын бир
-                                тексиздигинин картасы Vp изолинияларындагы цифралар.</p>
-                        </div>
-                    </div>
-                </button>
-
-                <button onclick="openModal('./assets/images/2.12.jpg')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.12.jpg" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.12</p>
-                            <p class="text-sm">10-20 км тереңдик диапазонундагы литосферанын ылдамдык
-                                гетерогендүүлүгүнүн картасы.</p>
-                        </div>
-                    </div>
-                </button>
-                <button onclick="openModal('./assets/images/2.14.jpg')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.14.jpg" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.14</p>
-                            <p class="text-sm">20-35 км тереңдик диапазонундагы литосферанын ылдамдык
-                                гетерогендүүлүгүнүн картасы.</p>
-                        </div>
-                    </div>
-                </button>
-
-                <button onclick="openModal('./assets/images/2.13.png')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.13.png" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.13</p>
-                            <p class="text-sm">Vp изолинияларындагы 10 - 20 км тереңдик диапазонундагы литосферанын
-                                ылдамдыктарынын гетерогендүүлүгүнүн картасы;</p>
-                        </div>
-                    </div>
-                </button>
-
-
-
-                <button onclick="openModal('./assets/images/2.17.jpg')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.17.jpg" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-2">
-                            <h6 class="text-lg font-semibold">Рис. 2.17</h6>
-                            <p class="text-sm">20-35 км тереңдик диапазонундагы литосферанын ылдамдык
-                                гетерогендүүлүгүнүн картасы.</p>
-                        </div>
-                    </div>
-                </button>
-
-
-                <button onclick="openModal('./assets/images/2.16.jpg')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.16.jpg" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.16</p>
-                            <p class="text-sm">10 – 20 км тереңдик диапазонундагы литосферанын ылдамдык
-                                гетерогендүүлүгүнүн картасы.</p>
-                        </div>
-                    </div>
-                </button>
-                <button onclick="openModal('./assets/images/2.10.jpg')">
-                    <div
-                        class="card bg-white border-2 border-gray-200 rounded-lg relative shadow-md hover:shadow-lg dark:hover:shadow-slate/800 hover:border-2 p-6 relative overflow-hidden transition-transform transform hover:scale-105">
-                        <img src="./assets/images/2.10.jpg" alt="" class="w-full h-3/4 object-cover">
-                        <div class="p-4">
-                            <p class="text-lg font-semibold mb-2">Рис. 2.10</p>
-                            <p class="text-sm">10 Литосферанын 5 – 10 км тереңдик диапазонундагы ылдамдык
-                                гетерогендүүлүгүнүн картасы.</p>
-                        </div>
-                    </div>
-                </button>
-            </div>
-        </section>
-
-
-        <section id="conclusion" class="mb-12 p-8 bg-gray-700 rounded-lg shadow-md">
+        <section id="conclusion" class="mb-12 mt-12 p-8 bg-cyan-500 rounded-lg shadow-md">
             <h3 class="text-3xl font-semibold mb-4 text-white">Заключение</h3>
             <p class="text-lg text-white">Создание скоростной модели литосферы,определения разрешающей способности
                 алгоритма Сейсмотомографической инверсии</p>
         </section>
+        <section id="author" class="p-8 bg-gray-100 mb-12 rounded-lg shadow-md">
+            <div class=" container mx-auto max-w-screen-lg ml-[100px] mt-7">
+                <div class="container ">
+                    <h1 class="title">КЫРГЫЗ РЕСПУБЛИКАСЫНЫН БИЛИМ БЕРҮҮ ЖАНА ИЛИМ МИНИСТРЛИГИ</h1>
+                    <h2 class="subtitle w-[750px] text-center mt-5 ">Ош Мамлекеттик университети
+                        Математика, физика, техника жана информациялык технологиялар институту
+                    </h2>
+                    <h3 class="department w-[750px] text-center mt-5">Колдонмо информатика жана информациялык коопсуздук
+                        кафедрасы</h3>
+    
+                    <div class="qualification w-[750px]">
+                        <h2 class="qualification-title flex justify-center mt-12 mb-12">КВАЛИФИКАЦИЯЛЫК ЖУМУШ</h2>
+                        <h1 class="qualification-theme w-[750px] text-center">тема:Сайтты иштеп чыгуу жана көмүр кендеринен түшкөн кирешелерди статистикалык талдоо</h1>
+                    </div>
+                    <div class="flex justify-between w-[700px] mt-24">
+                        <p class="text-xl student font-bold ">Аткарган:</p>
+                        <p class="student-name font-bold">Алижан уулу Улукбек</p>
+                    </div>
+                    <div class="flex justify-between w-[700px] ">
+                        <p class=" text-xl student font-bold">Илимий жетекчи:</p>
+                        <p class="student-name ">проф. Сайипбекова А.</p>
+                    </div>
+                    <div class="flex justify-between w-[700px] mb-12 ">
+                        <p class="text-xl student font-bold">Тайпасы:</p>
+                        <p class="student-name">ПИЭд(б)-2-20</p>
+                    </div>     
+    
+                    <p class="year text-center mr-[350px]">Ош-2024 ж.</p>
+                </div>
+                <!-- <button id="close-author-info" class="text-lg font-semibold hover:text-gray-300">Закрыть</button> -->
+            </div>
+            <style>
+    
+            </style>
+        </section>
     </main>
     <section id="footer">
-        <footer class="bg-gray-800 text-white py-6">
+        <footer class="bg-cyan-500 text-white py-6">
             <div class="container mx-auto text-center max-w-screen-lg">
                 <p>&copy; 2024 Исследовательская группа по Сейсмотомографии - кафедра Прикладная информатика и
                     информационная безопасность </p>
